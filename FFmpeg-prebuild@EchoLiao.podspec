@@ -11,4 +11,8 @@ Pod::Spec.new do |s|
   s.vendored_libraries  = 'lib/*.a'
   s.libraries           = 'avcodec avfilter avformat avutil swresample swscale'
   s.xcconfig            = { 'HEADER_SEARCH_PATHS' => "\"${PODS_ROOT}/#{s.name}/include\"" }
+
+  s.dependency 'faac-prebuild@EchoLiao', '1.28.1'
+  s.dependency 'lame-prebuild@EchoLiao', '3.99.5.1'
+  s.dependency 'x264-prebuild@EchoLiao', '20141123.2245.2'
 end
